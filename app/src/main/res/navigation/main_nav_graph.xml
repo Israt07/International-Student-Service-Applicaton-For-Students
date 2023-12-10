@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.company.iss.view.SplashFragment"
+        android:label="Splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_authFragment"
+            app:destination="@id/authFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.company.iss.view.authActivity.AuthFragment"
+        android:label="Auth"
+        tools:layout="@layout/fragment_auth" >
+        <action
+            android:id="@+id/action_authFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_authFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.company.iss.view.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_homeFragment_to_mapFragment"
+            app:destination="@id/mapFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_homeFragment_to_facilitiesFragment"
+            app:destination="@id/facilitiesFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_homeFragment_to_appointmentFragment"
+            app:destination="@id/appointmentFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_homeFragment_to_servicesFragment"
+            app:destination="@id/servicesFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_homeFragment_to_faqFragment"
+            app:destination="@id/faqFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_homeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_homeFragment_to_reviewRatingFragment"
+            app:destination="@id/reviewRatingFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"  />
+        <action
+            android:id="@+id/action_homeFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.company.iss.view.authActivity.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.company.iss.view.authActivity.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.company.iss.view.profileActivity.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_splashFragment"
+            app:destination="@id/splashFragment"
+            app:popUpTo="@id/profileFragment"
+            app:popUpToInclusive="true"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.company.iss.view.profileActivity.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.company.iss.view.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/facilitiesFragment"
+        android:name="com.company.iss.view.facilityActivity.FacilitiesFragment"
+        android:label="Facilities"
+        tools:layout="@layout/fragment_facilities" >
+        <action
+            android:id="@+id/action_facilitiesFragment_to_facilityDetailsFragment"
+            app:destination="@id/facilityDetailsFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_facilitiesFragment_to_communityFragment"
+            app:destination="@id/communityFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/facilityDetailsFragment"
+        android:name="com.company.iss.view.facilityActivity.FacilityDetailsFragment"
+        android:label="Facility Details"
+        tools:layout="@layout/fragment_facility_details" />
+    <fragment
+        android:id="@+id/appointmentFragment"
+        android:name="com.company.iss.view.appointmentActivity.AppointmentFragment"
+        android:label="Appointment"
+        tools:layout="@layout/fragment_appointment" >
+        <action
+            android:id="@+id/action_appointmentFragment_to_makeAppointmentFragment"
+            app:destination="@id/makeAppointmentFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_appointmentFragment_to_cancelAppointmentFragment"
+            app:destination="@id/cancelAppointmentFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_appointmentFragment_to_viewAppointmentsFragment"
+            app:destination="@id/viewAppointmentsFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/makeAppointmentFragment"
+        android:name="com.company.iss.view.appointmentActivity.MakeAppointmentFragment"
+        android:label="Make Appointment"
+        tools:layout="@layout/fragment_make_appointment" >
+        <action
+            android:id="@+id/action_makeAppointmentFragment_to_viewAppointmentsFragment"
+            app:destination="@id/viewAppointmentsFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/cancelAppointmentFragment"
+        android:name="com.company.iss.view.appointmentActivity.CancelAppointmentFragment"
+        android:label="Cancel Appointment"
+        tools:layout="@layout/fragment_cancel_appointment" />
+    <fragment
+        android:id="@+id/viewAppointmentsFragment"
+        android:name="com.company.iss.view.appointmentActivity.ViewAppointmentsFragment"
+        android:label="View Appointments"
+        tools:layout="@layout/fragment_view_appointments" >
+        <action
+            android:id="@+id/action_viewAppointmentsFragment_to_editAppointmentFragment"
+            app:destination="@id/editAppointmentFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/editAppointmentFragment"
+        android:name="com.company.iss.view.appointmentActivity.EditAppointmentFragment"
+        android:label="Edit Appointment"
+        tools:layout="@layout/fragment_edit_appointment" />
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.company.iss.view.servicesActivity.ServicesFragment"
+        android:label="Services"
+        tools:layout="@layout/fragment_services" >
+        <action
+            android:id="@+id/action_servicesFragment_to_housingFragment"
+            app:destination="@id/housingFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_servicesFragment_to_healthCareFragment"
+            app:destination="@id/healthCareFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_servicesFragment_to_translatorFragment"
+            app:destination="@id/translatorFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/housingFragment"
+        android:name="com.company.iss.view.servicesActivity.housingActivity.HousingFragment"
+        android:label="Housing"
+        tools:layout="@layout/fragment_housing" >
+        <action
+            android:id="@+id/action_housingFragment_to_housingDetailsFragment"
+            app:destination="@id/housingDetailsFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_housingFragment_to_viewBookingHistoryFragment"
+            app:destination="@id/viewBookingHistoryFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/healthCareFragment"
+        android:name="com.company.iss.view.servicesActivity.healthCareActivity.HealthCareFragment"
+        android:label="Health Care"
+        tools:layout="@layout/fragment_health_care" >
+        <action
+            android:id="@+id/action_healthCareFragment_to_doctorsFragment"
+            app:destination="@id/doctorsFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_healthCareFragment_to_reportsFragment"
+            app:destination="@id/reportsFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/faqFragment"
+        android:name="com.company.iss.view.faqActivity.FaqFragment"
+        android:label="Faq"
+        tools:layout="@layout/fragment_faq" >
+        <action
+            android:id="@+id/action_faqFragment_to_visaFragment"
+            app:destination="@id/visaFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_faqFragment_to_faqQuestionAnswerFragment"
+            app:destination="@id/faqQuestionAnswerFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_faqFragment_to_handbookFragment"
+            app:destination="@id/handbookFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/visaFragment"
+        android:name="com.company.iss.view.faqActivity.visaActivity.VisaFragment"
+        android:label="Visa"
+        tools:layout="@layout/fragment_visa" >
+        <action
+            android:id="@+id/action_visaFragment_to_faqQuestionAnswerFragment"
+            app:destination="@id/faqQuestionAnswerFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+        <action
+            android:id="@+id/action_visaFragment_to_visaRenewFragment"
+            app:destination="@id/visaRenewFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.company.iss.view.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/housingDetailsFragment"
+        android:name="com.company.iss.view.servicesActivity.housingActivity.HousingDetailsFragment"
+        android:label="Housing Details"
+        tools:layout="@layout/fragment_housing_details" />
+    <fragment
+        android:id="@+id/viewBookingHistoryFragment"
+        android:name="com.company.iss.view.servicesActivity.housingActivity.ViewBookingHistoryFragment"
+        android:label="View Booking History"
+        tools:layout="@layout/fragment_view_booking_history" />
+    <fragment
+        android:id="@+id/faqQuestionAnswerFragment"
+        android:name="com.company.iss.view.faqActivity.FaqQuestionAnswerFragment"
+        android:label="Faq Question Answer"
+        tools:layout="@layout/fragment_faq_question_answer" />
+    <fragment
+        android:id="@+id/handbookFragment"
+        android:name="com.company.iss.view.faqActivity.HandbookFragment"
+        android:label="Handbook"
+        tools:layout="@layout/fragment_handbook" />
+    <fragment
+        android:id="@+id/communityFragment"
+        android:name="com.company.iss.view.facilityActivity.communityActivity.CommunityFragment"
+        android:label="Community"
+        tools:layout="@layout/fragment_community" >
+        <action
+            android:id="@+id/action_communityFragment_to_communityDetailsFragment"
+            app:destination="@id/communityDetailsFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/communityDetailsFragment"
+        android:name="com.company.iss.view.facilityActivity.communityActivity.CommunityDetailsFragment"
+        android:label="Community Details"
+        tools:layout="@layout/fragment_community_details" />
+    <fragment
+        android:id="@+id/visaRenewFragment"
+        android:name="com.company.iss.view.faqActivity.visaActivity.VisaRenewFragment"
+        android:label="Visa Renew"
+        tools:layout="@layout/fragment_visa_renew" />
+    <fragment
+        android:id="@+id/reviewRatingFragment"
+        android:name="com.company.iss.view.ReviewRatingFragment"
+        android:label="Review Rating"
+        tools:layout="@layout/fragment_review_rating" />
+    <fragment
+        android:id="@+id/doctorsFragment"
+        android:name="com.company.iss.view.servicesActivity.healthCareActivity.DoctorsFragment"
+        android:label="fragment_doctors"
+        tools:layout="@layout/fragment_doctors" >
+        <action
+            android:id="@+id/action_doctorsFragment_to_doctorProfileFragment"
+            app:destination="@id/doctorProfileFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorProfileFragment"
+        android:name="com.company.iss.view.servicesActivity.healthCareActivity.DoctorProfileFragment"
+        android:label="fragment_doctor_profile"
+        tools:layout="@layout/fragment_doctor_profile" >
+        <action
+            android:id="@+id/action_doctorProfileFragment_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.company.iss.view.servicesActivity.healthCareActivity.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/translatorFragment"
+        android:name="com.company.iss.view.servicesActivity.TranslatorFragment"
+        android:label="fragment_translator"
+        tools:layout="@layout/fragment_translator" />
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.company.iss.view.servicesActivity.healthCareActivity.reportsActivity.ReportsFragment"
+        android:label="fragment_reports"
+        tools:layout="@layout/fragment_reports" >
+        <action
+            android:id="@+id/action_reportsFragment_to_reportsDetailsFragment"
+            app:destination="@id/reportsDetailsFragment"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportsDetailsFragment"
+        android:name="com.company.iss.view.servicesActivity.healthCareActivity.reportsActivity.ReportsDetailsFragment"
+        android:label="fragment_reports_details"
+        tools:layout="@layout/fragment_reports_details" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.company.iss.view.paymentActivity.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" />
+</navigation>

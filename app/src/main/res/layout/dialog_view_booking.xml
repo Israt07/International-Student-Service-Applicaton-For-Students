@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    android:elevation="0dp"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_18sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Housing Type"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_12sdp"/>
+
+        <TextView
+            android:id="@+id/housingTypeTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Housing Type"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration of Stay"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+        <TextView
+            android:id="@+id/durationOfStayTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration of Stay"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Status"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+        <TextView
+            android:id="@+id/paymentStatusTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Status"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Status"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+        <TextView
+            android:id="@+id/bookingStatusTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Status"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"/>
+
+        <LinearLayout
+            android:id="@+id/noteSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_12sdp"/>
+
+            <TextView
+                android:id="@+id/noteTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetLeft="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="@dimen/_8sdp"
+            android:backgroundTint="#FF0000"
+            android:padding="@dimen/_15sdp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

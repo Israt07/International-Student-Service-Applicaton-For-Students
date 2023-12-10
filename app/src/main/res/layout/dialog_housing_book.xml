@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/windowBackgroundColor"
+    android:elevation="0dp"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/durationOfStaySelectTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration Of Stay"
+            app:boxStrokeColor="@color/themeColor"
+            app:hintTextColor="@color/blackTextColor">
+
+            <AutoCompleteTextView
+                android:id="@+id/durationOfStaySelectAutoCompleteTextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textCapWords"
+                android:text="Select"
+                android:textColor="@color/blackTextColor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/yearSelectTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Year"
+            app:boxStrokeColor="@color/themeColor"
+            app:hintTextColor="@color/blackTextColor"
+            android:layout_marginTop="@dimen/_12sdp">
+
+            <AutoCompleteTextView
+                android:id="@+id/yearSelectAutoCompleteTextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textCapWords"
+                android:text="Select"
+                android:textColor="@color/blackTextColor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/raceSelectTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Race"
+            app:boxStrokeColor="@color/themeColor"
+            app:hintTextColor="@color/blackTextColor"
+            android:layout_marginTop="@dimen/_12sdp">
+
+            <AutoCompleteTextView
+                android:id="@+id/raceSelectAutoCompleteTextview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textCapWords"
+                android:text="Select"
+                android:textColor="@color/blackTextColor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bookNowButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/buttonBackgroundColor"
+            android:text="Book Now"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            app:cornerRadius="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

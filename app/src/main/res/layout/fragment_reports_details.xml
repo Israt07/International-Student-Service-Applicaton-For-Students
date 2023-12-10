@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.servicesActivity.healthCareActivity.reportsActivity.ReportsDetailsFragment"
+    android:background="#E6E6E6">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titleBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_43sdp"
+        android:background="@color/themeColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/backIcon"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/_19sdp"
+            app:cardBackgroundColor="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginStart="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/back_icon"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:text="Report Details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/backIcon"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/titleBarLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor's Name"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_12sdp"/>
+
+            <TextView
+                android:id="@+id/doctorNameTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor's Name"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of report"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/dateOfReportTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical History (if applicable)"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/medicalHistoryTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical History (if applicable)"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Symptoms/Complaints"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/currentSymptomsTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Symptoms/Complaints"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medication Name"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/medicationNameTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medication Name"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dosage"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/dosageTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dosage"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frequency"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/frequencyTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frequency"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test Name"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/testNameTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test Name"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Results"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/resultsTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Results"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diagnosis/Assessment"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/diagnosisTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diagnosis/Assessment"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Treatment/Prescription"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/treatmentTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Treatment/Prescription"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor's Notes/Comments (if any)"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/doctorsNoteTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor's Notes/Comments (if any)"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
